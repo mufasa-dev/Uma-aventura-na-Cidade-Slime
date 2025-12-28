@@ -7,7 +7,7 @@ Bem-vindo ao repositório de **Uma Aventura na Cidade Slime**, um RPG 3D explora
 
 ## 📝 Sobre o Projeto
 
-Neste jogo, você assume o papel de um novo morador na Cidade Slime. O objetivo é realizar missões, interagir com NPCs gosmentos e descobrir os segredos que cercam a infraestrutura da cidade.
+Neste jogo, você assume o papel de um novo morador na Cidade Slime chamado José. O objetivo é realizar missões, interagir com NPCs gosmentos e descobrir os segredos que cercam a infraestrutura da cidade.
 
 * **Gênero:** RPG 3D / Aventura.
 * **Motor Gráfico:** Godot Engine 4.x.
@@ -34,7 +34,7 @@ Para rodar o projeto ou editá-lo, você precisará ter a [Godot Engine 4.x](htt
 
 1. Clone este repositório:
 ```bash
-git clone https://github.com/seu-usuario/uma-aventura-na-cidade-slime.git
+git clone https://github.com/mufasa-dev/uma-aventura-na-cidade-slime.git
 
 ```
 
