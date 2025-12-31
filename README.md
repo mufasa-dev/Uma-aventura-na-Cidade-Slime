@@ -61,12 +61,6 @@ git clone https://github.com/mufasa-dev/uma-aventura-na-cidade-slime.git
 
 ---
 
-## 📸 Screenshots
-
-> *Coloque aqui imagens do seu jogo para atrair a atenção!*
-
----
-
 ## 📄 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](https://www.google.com/search?q=LICENSE) para mais detalhes.
