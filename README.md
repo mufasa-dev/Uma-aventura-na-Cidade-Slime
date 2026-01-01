@@ -42,17 +42,6 @@ git clone https://github.com/mufasa-dev/uma-aventura-na-cidade-slime.git
 2. Abra a Godot Engine.
 3. Clique em **Importar** e selecione o arquivo `project.godot` na pasta do repositório.
 
-### Controles Básicos
-
-| Ação | Tecla |
-| --- | --- |
-| **Movimentação** | W, A, S, D |
-| **Pular** | Barra de Espaço |
-| **Interagir** | E |
-| **Pausar** | Esc |
-
----
-
 ## 🛠️ Tecnologias Utilizadas
 
 * **Linguagem:** GDScript.
