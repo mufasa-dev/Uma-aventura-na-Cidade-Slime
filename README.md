@@ -1,7 +1,7 @@
 
 # 🥖 Uma Aventura na Cidade Slime
 
-Bem-vindo ao repositório de **Uma Aventura na Cidade Slime**, um RPG 3D exploratório desenvolvido na **Godot Engine**. Prepare-se para explorar uma metrópole vibrante habitada inteiramente por criaturas gelatinosas!
+Bem-vindo ao repositório de **Uma Aventura na Cidade Slime**, um RPG 3D exploratório desenvolvido na **Godot Engine**. Prepare-se para explorar uma cidade vibrante habitada inteiramente por criaturas gelatinosas!
 
 ---
 
