@@ -24,7 +24,7 @@ Neste jogo, você assume o papel de um novo morador na Cidade Slime chamado Jos�
 
 ---
 
-## 🎮 Como Jogar
+## 🎮 Como rodar
 
 ### Pré-requisitos
 
