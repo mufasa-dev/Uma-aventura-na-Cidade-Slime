@@ -19,7 +19,6 @@ Neste jogo, você assume o papel de um novo morador na Cidade Slime chamado Jos�
 
 * **Exploração Livre:** Uma cidade 3D aberta com diversos NPCs.
 * **Sistema de Missões:** Converse com NPCs e ajude os cidadãos para ganhar recompensas.
-* **Customização:** Mude a cor e os acessórios do seu slime.
 * **Mecânicas de Salto:** Movimentação fluida baseada na física de "elasticidade".
 
 ---
