@@ -45,7 +45,6 @@ git clone https://github.com/mufasa-dev/uma-aventura-na-cidade-slime.git
 
 * **Linguagem:** GDScript.
 * **Modelagem 3D:** Blender.
-* **Interface (UI):** Temas nativos da Godot.
 
 ---
 
