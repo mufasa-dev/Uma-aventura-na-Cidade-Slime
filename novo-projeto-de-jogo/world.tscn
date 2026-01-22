@@ -1,4 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://1x0fv0pv2yjy"]
+[gd_scene load_steps=11 format=3 uid="uid://1x0fv0pv2yjy"]
+
+[ext_resource type="Script" uid="uid://obwt7bbqlf7o" path="res://scripts/player.gd" id="1_f3sb7"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gv5m4"]
 vertex_color_use_as_albedo = true
@@ -7,6 +9,9 @@ albedo_color = Color(0.6398571, 0.41737178, 0.20084164, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_gv5m4"]
 material = SubResource("StandardMaterial3D_gv5m4")
+size = Vector3(5, 0.5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_f3sb7"]
 size = Vector3(5, 0.5, 5)
 
 [sub_resource type="BoxMesh" id="BoxMesh_f3sb7"]
@@ -21,19 +26,41 @@ background_mode = 2
 background_color = Color(0.66647506, 0.43171805, 0.24810952, 1)
 sky = SubResource("Sky_f3sb7")
 
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_fj7yv"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_tlwt5"]
+
 [node name="World" type="Node3D"]
 
-[node name="World" type="MeshInstance3D" parent="."]
+[node name="Floor3d" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0015141964, 0.0054564476, -0.0033388138)
+
+[node name="World" type="MeshInstance3D" parent="Floor3d"]
 mesh = SubResource("BoxMesh_gv5m4")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor3d"]
+shape = SubResource("BoxShape3D_f3sb7")
 
 [node name="Box" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1407907, 0.7576382, 0.07039833)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1407907, 0.7576382, -1.3122419)
 mesh = SubResource("BoxMesh_f3sb7")
-skeleton = NodePath("../World")
+skeleton = NodePath("../Floor3d/World")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(0.045607083, 0, -0.9989595, 0, 1, 0, 0.9989595, 0, 0.045607083, -3.7063148, 1.0703255, 0.1767816)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_fj7yv")
+
+[node name="Player" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5134015, 1.5763891)
+script = ExtResource("1_f3sb7")
+
+[node name="mesh_player" type="MeshInstance3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.3590052)
+mesh = SubResource("CapsuleMesh_fj7yv")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
+shape = SubResource("CapsuleShape3D_tlwt5")
