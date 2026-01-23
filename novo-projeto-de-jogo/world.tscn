@@ -1,6 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://1x0fv0pv2yjy"]
+[gd_scene load_steps=12 format=3 uid="uid://1x0fv0pv2yjy"]
 
 [ext_resource type="Script" uid="uid://obwt7bbqlf7o" path="res://scripts/player.gd" id="1_f3sb7"]
+[ext_resource type="Texture2D" uid="uid://b7pkius0hexbn" path="res://anime_skybox.jpg" id="1_fj7yv"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gv5m4"]
 vertex_color_use_as_albedo = true
@@ -16,10 +17,12 @@ size = Vector3(5, 0.5, 5)
 
 [sub_resource type="BoxMesh" id="BoxMesh_f3sb7"]
 
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gv5m4"]
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_tlwt5"]
+panorama = ExtResource("1_fj7yv")
 
 [sub_resource type="Sky" id="Sky_f3sb7"]
-sky_material = SubResource("ProceduralSkyMaterial_gv5m4")
+resource_local_to_scene = true
+sky_material = SubResource("PanoramaSkyMaterial_tlwt5")
 
 [sub_resource type="Environment" id="Environment_fj7yv"]
 background_mode = 2
