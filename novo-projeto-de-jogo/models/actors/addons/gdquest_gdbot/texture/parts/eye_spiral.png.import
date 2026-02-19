@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dt0veafbpw6ih"
-path="res://.godot/imported/eye_spiral.png-8e8946b707c89c1b1503bf7917ea2cb1.ctex"
+path="res://.godot/imported/eye_spiral.png-e39bf19685c526adb989c362505ef4f1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://addons/gdquest_gdbot/texture/parts/eye_spiral.png"
-dest_files=["res://.godot/imported/eye_spiral.png-8e8946b707c89c1b1503bf7917ea2cb1.ctex"]
+source_file="res://models/actors/addons/gdquest_gdbot/texture/parts/eye_spiral.png"
+dest_files=["res://.godot/imported/eye_spiral.png-e39bf19685c526adb989c362505ef4f1.ctex"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://16iu10wxub40"
-path="res://.godot/imported/sophia.glb-d7b8cf4a3f2715ceba7842d2744ce1ef.scn"
+path="res://.godot/imported/sophia.glb-2f935d4d69c10079ec7e229c7a1085b0.scn"
 
 [deps]
 
-source_file="res://addons/gdquest_sophia/model/sophia.glb"
-dest_files=["res://.godot/imported/sophia.glb-d7b8cf4a3f2715ceba7842d2744ce1ef.scn"]
+source_file="res://models/actors/addons/gdquest_sophia/model/sophia.glb"
+dest_files=["res://.godot/imported/sophia.glb-2f935d4d69c10079ec7e229c7a1085b0.scn"]
 
 [params]
 

@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://r33dd86y85gd"
-path="res://.godot/imported/room_mesh.obj-18d913e73e4e90b43bdd3c53e3711fe4.mesh"
+path="res://.godot/imported/room_mesh.obj-06c99874fbad9a42c1d1b8ed40d3755d.mesh"
 
 [deps]
 
-files=["res://.godot/imported/room_mesh.obj-18d913e73e4e90b43bdd3c53e3711fe4.mesh"]
+files=["res://.godot/imported/room_mesh.obj-06c99874fbad9a42c1d1b8ed40d3755d.mesh"]
 
-source_file="res://addons/gdquest_model_viewer_3d/viewer/assets/meshes/room_mesh.obj"
-dest_files=["res://.godot/imported/room_mesh.obj-18d913e73e4e90b43bdd3c53e3711fe4.mesh", "res://.godot/imported/room_mesh.obj-18d913e73e4e90b43bdd3c53e3711fe4.mesh"]
+source_file="res://models/actors/addons/gdquest_model_viewer_3d/viewer/assets/meshes/room_mesh.obj"
+dest_files=["res://.godot/imported/room_mesh.obj-06c99874fbad9a42c1d1b8ed40d3755d.mesh", "res://.godot/imported/room_mesh.obj-06c99874fbad9a42c1d1b8ed40d3755d.mesh"]
 
 [params]
 

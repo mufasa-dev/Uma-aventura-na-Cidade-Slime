@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dbqoj8oam1dsg"
-path="res://.godot/imported/beetle_bot_fused.glb-edddf879be73a9c765da39acf52c07a5.scn"
+path="res://.godot/imported/beetle_bot_fused.glb-cf7338df9121bfd7207e73bc5a85ac4a.scn"
 
 [deps]
 
-source_file="res://addons/gdquest_beetle_bot/model/beetle_bot_fused.glb"
-dest_files=["res://.godot/imported/beetle_bot_fused.glb-edddf879be73a9c765da39acf52c07a5.scn"]
+source_file="res://models/actors/addons/gdquest_beetle_bot/model/beetle_bot_fused.glb"
+dest_files=["res://.godot/imported/beetle_bot_fused.glb-cf7338df9121bfd7207e73bc5a85ac4a.scn"]
 
 [params]
 
