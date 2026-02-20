@@ -10,7 +10,7 @@ Bem-vindo ao repositório de **Uma Aventura na Cidade Slime**, um RPG 3D explora
 Neste jogo, você assume o papel de um novo morador na Cidade Slime chamado José. O objetivo é realizar missões, interagir com outros Slimes espalhados pelo maoa e descobrir os segredos que cercam a infraestrutura da cidade.
 
 * **Gênero:** RPG 3D / Aventura.
-* **Motor Gráfico:** Godot Engine 4.x.
+* **Motor Gráfico:** Godot Engine 4.6.
 * **Estilo Visual:** Low-poly / Colorido.
 
 ---
