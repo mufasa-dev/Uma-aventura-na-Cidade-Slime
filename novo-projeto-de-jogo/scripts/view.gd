@@ -53,3 +53,12 @@ func handle_input(delta):
 	
 	zoom += Input.get_axis("zoom_in", "zoom_out") * zoom_speed * delta
 	zoom = clamp(zoom, zoom_maximum, zoom_minimum)
+	
+func _input(event):
+	if event is InputEventMouseButton:
+		if event.is_pressed():
+			if event.button_index == MOUSE_BUTTON_WHEEL_UP:
+				zoom -= lerpf(zoom, zoom_speed, 0.1)
+			elif event.button_index == MOUSE_BUTTON_WHEEL_DOWN:
+				zoom += lerpf(zoom, zoom_speed, 0.1)
+			zoom = clamp(zoom, zoom_maximum, zoom_minimum)
