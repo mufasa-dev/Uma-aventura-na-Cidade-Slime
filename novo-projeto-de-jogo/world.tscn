@@ -32,8 +32,14 @@ background_color = Color(0.66647506, 0.43171805, 0.24810952, 1)
 sky = SubResource("Sky_f3sb7")
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_tlwt5"]
+height = 2.3132324
 
 [node name="World" type="Node3D" unique_id=1651330867]
+
+[node name="Camera_pivo" type="Node3D" parent="." unique_id=1526602474]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=2046360721]
+transform = Transform3D(0.045607083, 0, -0.9989595, 0, 1, 0, 0.9989595, 0, 0.045607083, -3.7063148, 1.0703255, 0.1767816)
 
 [node name="Floor3d" type="StaticBody3D" parent="." unique_id=874269123]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0015141964, 0.0054564476, -0.0033388138)
@@ -50,9 +56,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1407907, 0.7576382, -1.312
 mesh = SubResource("BoxMesh_f3sb7")
 skeleton = NodePath("../Floor3d/World")
 
-[node name="Camera3D" type="Camera3D" parent="." unique_id=2046360721]
-transform = Transform3D(0.045607083, 0, -0.9989595, 0, 1, 0, 0.9989595, 0, 0.045607083, -3.7063148, 1.0703255, 0.1767816)
-
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=293206343]
 environment = SubResource("Environment_fj7yv")
 
@@ -61,10 +64,11 @@ transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 1.3022804, 0.4810226, 1
 script = ExtResource("1_f3sb7")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=1953764937]
+transform = Transform3D(5.9121413, 0, 0, 0, 2.5765162, 0, 0, 0, 4.156856, -6.6450047, 8.37258, -5.3290315)
 shape = SubResource("CapsuleShape3D_tlwt5")
 
-[node name="jose" parent="Player/CollisionShape3D" unique_id=807682144 instance=ExtResource("3_aqk2v")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.89706516, 1.1168399, 0)
+[node name="jose" parent="Player" unique_id=807682144 instance=ExtResource("3_aqk2v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.127076, 8.523517, -6.315961)
 
 [node name="barrel2" parent="." unique_id=718537484 instance=ExtResource("3_tlwt5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.29518282, 0.22543979, 1.5904007)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.29518282, 0.931281, 1.5904007)

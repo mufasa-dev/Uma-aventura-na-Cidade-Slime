@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://cha6egceks8ab" path="res://models/actors/slimes/jose.glb" id="1_sutnd"]
 
-[node name="jose" unique_id=807682144 instance=ExtResource("1_sutnd")]
+[node name="jose" unique_id=120627880 instance=ExtResource("1_sutnd")]
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0.5593462, 0)
 
-[node name="Jose" parent="." index="0" unique_id=1632273183]
+[node name="Jose" parent="." index="0" unique_id=333153795]
 "blend_shapes/Boca aberta" = 0.02083
