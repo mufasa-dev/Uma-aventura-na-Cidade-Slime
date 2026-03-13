@@ -1,6 +1,6 @@
-[gd_resource type="Theme" load_steps=8 format=3 uid="uid://dioqrbukc6tl0"]
+[gd_resource type="Theme" format=3 uid="uid://dioqrbukc6tl0"]
 
-[ext_resource type="Texture2D" uid="uid://b3hg20sllwpo" path="res://addons/gdquest_model_viewer_3d/viewer/assets/textures/down_arrow_icon.png" id="1_8g03f"]
+[ext_resource type="Texture2D" uid="uid://b3hg20sllwpo" path="res://models/actors/addons/gdquest_model_viewer_3d/viewer/assets/textures/down_arrow_icon.png" id="1_8g03f"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aa11v"]
 content_margin_left = 4.0

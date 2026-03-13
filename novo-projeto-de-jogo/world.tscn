@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://obwt7bbqlf7o" path="res://scripts/player.gd" id="1_f3sb7"]
 [ext_resource type="Texture2D" uid="uid://b7pkius0hexbn" path="res://anime_skybox.jpg" id="1_fj7yv"]
+[ext_resource type="PackedScene" uid="uid://cbfinedbe4yqa" path="res://jose.tscn" id="3_aqk2v"]
 [ext_resource type="PackedScene" uid="uid://dm4p2uht7u335" path="res://models/assets/barrel.glb" id="3_tlwt5"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gv5m4"]
@@ -30,44 +31,40 @@ background_mode = 2
 background_color = Color(0.66647506, 0.43171805, 0.24810952, 1)
 sky = SubResource("Sky_f3sb7")
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_fj7yv"]
-
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_tlwt5"]
 
-[node name="World" type="Node3D"]
+[node name="World" type="Node3D" unique_id=1651330867]
 
-[node name="Floor3d" type="StaticBody3D" parent="."]
+[node name="Floor3d" type="StaticBody3D" parent="." unique_id=874269123]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0015141964, 0.0054564476, -0.0033388138)
 
-[node name="World" type="MeshInstance3D" parent="Floor3d"]
+[node name="World" type="MeshInstance3D" parent="Floor3d" unique_id=932789720]
 mesh = SubResource("BoxMesh_gv5m4")
 skeleton = NodePath("../..")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor3d"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor3d" unique_id=1648371221]
 shape = SubResource("BoxShape3D_f3sb7")
 
-[node name="Box" type="MeshInstance3D" parent="."]
+[node name="Box" type="MeshInstance3D" parent="." unique_id=910140057]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1407907, 0.7576382, -1.3122419)
 mesh = SubResource("BoxMesh_f3sb7")
 skeleton = NodePath("../Floor3d/World")
 
-[node name="Camera3D" type="Camera3D" parent="."]
+[node name="Camera3D" type="Camera3D" parent="." unique_id=2046360721]
 transform = Transform3D(0.045607083, 0, -0.9989595, 0, 1, 0, 0.9989595, 0, 0.045607083, -3.7063148, 1.0703255, 0.1767816)
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=293206343]
 environment = SubResource("Environment_fj7yv")
 
-[node name="Player" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5134015, 1.5763891)
+[node name="Player" type="CharacterBody3D" parent="." unique_id=1897691763]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 1.3022804, 0.4810226, 1.5763891)
 script = ExtResource("1_f3sb7")
 
-[node name="mesh_player" type="MeshInstance3D" parent="Player"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.3590052)
-mesh = SubResource("CapsuleMesh_fj7yv")
-skeleton = NodePath("../..")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=1953764937]
 shape = SubResource("CapsuleShape3D_tlwt5")
 
-[node name="barrel2" parent="." instance=ExtResource("3_tlwt5")]
+[node name="jose" parent="Player/CollisionShape3D" unique_id=807682144 instance=ExtResource("3_aqk2v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.89706516, 1.1168399, 0)
+
+[node name="barrel2" parent="." unique_id=718537484 instance=ExtResource("3_tlwt5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.29518282, 0.22543979, 1.5904007)
