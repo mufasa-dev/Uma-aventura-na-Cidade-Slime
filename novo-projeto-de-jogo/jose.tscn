@@ -2,8 +2,31 @@
 
 [ext_resource type="PackedScene" uid="uid://cha6egceks8ab" path="res://models/actors/slimes/jose.glb" id="1_sutnd"]
 
+[sub_resource type="Animation" id="Animation_sutnd"]
+resource_name = "walk"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Jose:blend_shapes/Achatado")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mia3x"]
+_data = {
+&"walk": SubResource("Animation_sutnd")
+}
+
 [node name="jose" unique_id=120627880 instance=ExtResource("1_sutnd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5593462, 0)
 
 [node name="Jose" parent="." index="0" unique_id=333153795]
 "blend_shapes/Boca aberta" = 0.02083
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="2" unique_id=189927071]
+libraries/ = SubResource("AnimationLibrary_mia3x")
