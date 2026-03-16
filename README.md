@@ -3,8 +3,6 @@
 
 Bem-vindo ao repositório de **Uma Aventura na Cidade Slime**, um RPG 3D exploratório desenvolvido na **Godot Engine**. Prepare-se para explorar uma cidade vibrante habitada inteiramente por criaturas gelatinosas!
 
----
-
 ## 📝 Sobre o Projeto
 
 Neste jogo, você assume o papel de um novo morador na Cidade Slime chamado José. O objetivo é realizar missões, interagir com outros Slimes espalhados pelo maoa e descobrir os segredos que cercam a infraestrutura da cidade.
@@ -13,16 +11,12 @@ Neste jogo, você assume o papel de um novo morador na Cidade Slime chamado Jos�
 * **Motor Gráfico:** Godot Engine 4.6.
 * **Estilo Visual:** Low-poly / Colorido.
 
----
-
 ## ✨ Funcionalidades
 
 * **Exploração Livre:** Uma cidade 3D aberta com diversos NPCs.
 * **Sistema de Missões:** Converse com NPCs e ajude os cidadãos para ganhar recompensas.
 * **Mecânicas de Salto:** Movimentação fluida baseada na física de "elasticidade".
 * **Sistema de batalha** Lute contra inimigos durante as missões
-
----
 
 ## 🎮 Como rodar
 
@@ -46,8 +40,6 @@ git clone https://github.com/mufasa-dev/uma-aventura-na-cidade-slime.git
 
 * **Linguagem:** GDScript.
 * **Modelagem 3D:** Blender.
-
----
 
 ## 📄 Licença
 
