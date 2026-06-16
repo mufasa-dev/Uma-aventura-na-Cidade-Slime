@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://obwt7bbqlf7o" path="res://scripts/player.gd" id="1_f3sb7"]
 [ext_resource type="Texture2D" uid="uid://b7pkius0hexbn" path="res://anime_skybox.jpg" id="1_fj7yv"]
 [ext_resource type="PackedScene" uid="uid://cbfinedbe4yqa" path="res://jose.tscn" id="3_aqk2v"]
-[ext_resource type="PackedScene" uid="uid://dm4p2uht7u335" path="res://models/assets/barrel.glb" id="3_tlwt5"]
+[ext_resource type="PackedScene" uid="uid://drwyvmavdqlhy" path="res://prefab/coin.tscn" id="5_036b0"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gv5m4"]
 vertex_color_use_as_albedo = true
@@ -13,12 +13,10 @@ albedo_color = Color(0.6398571, 0.41737178, 0.20084164, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_gv5m4"]
 material = SubResource("StandardMaterial3D_gv5m4")
-size = Vector3(5, 0.5, 5)
+size = Vector3(50, 0.5, 50)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_f3sb7"]
-size = Vector3(5, 0.5, 5)
-
-[sub_resource type="BoxMesh" id="BoxMesh_f3sb7"]
+size = Vector3(50, 0.5, 50)
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_tlwt5"]
 panorama = ExtResource("1_fj7yv")
@@ -45,33 +43,34 @@ zoom_minimum = 10
 zoom_maximum = 2
 
 [node name="Camera" type="Camera3D" parent="Camera_pivot" unique_id=2046360721]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.09895754, 2.0882778)
 
 [node name="Floor3d" type="StaticBody3D" parent="." unique_id=874269123]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0015141964, 0.0054564476, -0.0033388138)
 
 [node name="World" type="MeshInstance3D" parent="Floor3d" unique_id=932789720]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.7512571, 0)
 mesh = SubResource("BoxMesh_gv5m4")
 skeleton = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Floor3d" unique_id=1648371221]
 shape = SubResource("BoxShape3D_f3sb7")
 
-[node name="Box" type="MeshInstance3D" parent="." unique_id=910140057]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1407907, 0.7576382, -1.3122419)
-mesh = SubResource("BoxMesh_f3sb7")
-skeleton = NodePath("../Floor3d/World")
-
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=293206343]
 environment = SubResource("Environment_fj7yv")
 
-[node name="Player" type="CharacterBody3D" parent="." unique_id=1897691763]
-transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 1.3022804, 1.5895157, -0.05667901)
+[node name="Player" type="CharacterBody3D" parent="." unique_id=1897691763 node_paths=PackedStringArray("view")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 1.3022804, 0.32674122, -0.05667901)
 script = ExtResource("1_f3sb7")
+view = NodePath("../Camera_pivot")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=1953764937]
 shape = SubResource("CapsuleShape3D_036b0")
 
-[node name="jose" parent="Player" unique_id=807682144 instance=ExtResource("3_aqk2v")]
+[node name="jose" parent="Player" unique_id=120627880 instance=ExtResource("3_aqk2v")]
 
-[node name="barrel2" parent="." unique_id=718537484 instance=ExtResource("3_tlwt5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.29518282, 0.931281, 1.5904007)
+[node name="Coin" parent="." unique_id=504632388 instance=ExtResource("5_036b0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.2190287, 1.068622, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=832973197]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8863552, 2.632645, 5.7514815)
