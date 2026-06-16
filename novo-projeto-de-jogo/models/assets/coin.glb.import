@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dykoi22crygjv"
-path="res://.godot/imported/fence-broken.glb-ac00b660a688dd6162c63a3ea8d8faa1.scn"
+uid="uid://byux7bc6e3np3"
+path="res://.godot/imported/coin.glb-abe4ab46cb0d98d7d88f3c3175b9b708.scn"
 
 [deps]
 
-source_file="res://models/assets/fence-broken.glb"
-dest_files=["res://.godot/imported/fence-broken.glb-ac00b660a688dd6162c63a3ea8d8faa1.scn"]
+source_file="res://models/assets/coin.glb"
+dest_files=["res://.godot/imported/coin.glb-abe4ab46cb0d98d7d88f3c3175b9b708.scn"]
 
 [params]
 
