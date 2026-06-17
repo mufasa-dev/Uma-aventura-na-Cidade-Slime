@@ -2,18 +2,16 @@
 
 [ext_resource type="Script" uid="uid://dhheclar2v27b" path="res://scripts/view.gd" id="1_036b0"]
 [ext_resource type="Script" uid="uid://obwt7bbqlf7o" path="res://scripts/player.gd" id="1_f3sb7"]
-[ext_resource type="Texture2D" uid="uid://b7pkius0hexbn" path="res://anime_skybox.jpg" id="1_fj7yv"]
 [ext_resource type="PackedScene" uid="uid://cbfinedbe4yqa" path="res://jose.tscn" id="3_aqk2v"]
 [ext_resource type="PackedScene" uid="uid://drwyvmavdqlhy" path="res://prefab/coin.tscn" id="5_036b0"]
 [ext_resource type="PackedScene" uid="uid://o5qny8bfnyhc" path="res://models/scenario/tree.glb" id="6_dwbse"]
 [ext_resource type="PackedScene" uid="uid://2r8xweymxab4" path="res://models/actors/enemies/lesma.tscn" id="7_pkg7o"]
 
-[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_tlwt5"]
-panorama = ExtResource("1_fj7yv")
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_dwbse"]
 
 [sub_resource type="Sky" id="Sky_f3sb7"]
 resource_local_to_scene = true
-sky_material = SubResource("PanoramaSkyMaterial_tlwt5")
+sky_material = SubResource("ProceduralSkyMaterial_dwbse")
 
 [sub_resource type="Environment" id="Environment_fj7yv"]
 background_mode = 2
@@ -60,6 +58,7 @@ script = ExtResource("1_f3sb7")
 view = NodePath("../Camera_pivot")
 
 [node name="jose" parent="Player" unique_id=1811416451 instance=ExtResource("3_aqk2v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.81667566, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=1568743069]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5708027, 2.402777, 0)
