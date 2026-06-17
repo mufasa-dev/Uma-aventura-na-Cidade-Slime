@@ -3,7 +3,7 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cha6egceks8ab"
+uid="uid://ca3mg1pgpq7bq"
 path="res://.godot/imported/jose.glb-7c365a77a35550464e48424586e13a53.scn"
 
 [deps]
@@ -37,6 +37,15 @@ import_script/path=""
 materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
-_subresources={}
+_subresources={
+"nodes": {
+"PATH:Empty": {
+"import/skip_import": true
+},
+"PATH:Empty_001": {
+"import/skip_import": true
+}
+}
+}
 gltf/naming_version=2
 gltf/embedded_image_handling=1

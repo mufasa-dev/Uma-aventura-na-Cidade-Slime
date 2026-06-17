@@ -1,12 +1,5 @@
 [gd_scene format=3 uid="uid://cbfinedbe4yqa"]
 
-[ext_resource type="PackedScene" uid="uid://cha6egceks8ab" path="res://models/actors/slimes/jose.glb" id="1_sutnd"]
+[ext_resource type="PackedScene" uid="uid://ca3mg1pgpq7bq" path="res://models/actors/slimes/jose.glb" id="1_sutnd"]
 
-[node name="jose" unique_id=120627880 instance=ExtResource("1_sutnd")]
-transform = Transform3D(-0.9999999, 0, -0.0004712661, 0, 1, 0, 0.0004712661, 0, -0.9999999, 0, 0.5593462, 0)
-
-[node name="Empty" parent="." index="0" unique_id=1622230048]
-transform = Transform3D(-1, -1.6292324e-07, -1.6292076e-07, 1.6292071e-07, 0, -1, 1.6292324e-07, -1, 0, -0.031203322, 0.23214722, 0.39117378)
-
-[node name="Empty_001" parent="." index="1" unique_id=1560962127]
-transform = Transform3D(3.5762787e-07, -1, -5.9604645e-08, -5.9604645e-08, 0, -1, 1, 4.172325e-07, -1.1920929e-07, 0.08825903, -0.71608305, 1.4240859)
+[node name="jose" unique_id=1811416451 instance=ExtResource("1_sutnd")]
