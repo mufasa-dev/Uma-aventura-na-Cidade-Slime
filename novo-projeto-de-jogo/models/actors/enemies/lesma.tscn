@@ -11,12 +11,14 @@ radius = 0.35205078
 height = 0.95874023
 
 [node name="Lesma" type="CharacterBody3D" unique_id=816273055]
+collision_layer = 3
+collision_mask = 2
 script = ExtResource("1_hjbnk")
 
-[node name="lesma2" parent="." unique_id=21587348 instance=ExtResource("1_tanma")]
+[node name="lesma2" parent="." unique_id=734588156 instance=ExtResource("1_tanma")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
 
-[node name="colision_body" type="CollisionShape3D" parent="." unique_id=1470214162]
+[node name="thorns" type="CollisionShape3D" parent="." unique_id=1470214162]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.44288516, 0.077911705)
 shape = SubResource("BoxShape3D_qlyn3")
 
