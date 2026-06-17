@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://b7pkius0hexbn" path="res://anime_skybox.jpg" id="1_fj7yv"]
 [ext_resource type="PackedScene" uid="uid://cbfinedbe4yqa" path="res://jose.tscn" id="3_aqk2v"]
 [ext_resource type="PackedScene" uid="uid://drwyvmavdqlhy" path="res://prefab/coin.tscn" id="5_036b0"]
+[ext_resource type="PackedScene" uid="uid://o5qny8bfnyhc" path="res://models/scenario/tree.glb" id="6_dwbse"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gv5m4"]
 vertex_color_use_as_albedo = true
@@ -32,7 +33,7 @@ sky = SubResource("Sky_f3sb7")
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_036b0"]
 radius = 2.5
-height = 5.0
+height = 5.091
 
 [node name="World" type="Node3D" unique_id=1651330867]
 
@@ -60,11 +61,12 @@ shape = SubResource("BoxShape3D_f3sb7")
 environment = SubResource("Environment_fj7yv")
 
 [node name="Player" type="CharacterBody3D" parent="." unique_id=1897691763 node_paths=PackedStringArray("view")]
-transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 1.3022804, 0.32674122, -0.05667901)
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 1.3022804, 0.33168036, -0.05667901)
 script = ExtResource("1_f3sb7")
 view = NodePath("../Camera_pivot")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=1953764937]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.118476, 0)
 shape = SubResource("CapsuleShape3D_036b0")
 
 [node name="jose" parent="Player" unique_id=120627880 instance=ExtResource("3_aqk2v")]
@@ -74,3 +76,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.2190287, 1.068622, 0)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=832973197]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8863552, 2.632645, 5.7514815)
+
+[node name="tree" parent="." unique_id=595786208 instance=ExtResource("6_dwbse")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.555154, 9.963092, -10.174973)
