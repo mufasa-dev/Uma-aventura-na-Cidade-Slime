@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cbfinedbe4yqa" path="res://jose.tscn" id="3_aqk2v"]
 [ext_resource type="PackedScene" uid="uid://drwyvmavdqlhy" path="res://prefab/coin.tscn" id="5_036b0"]
 [ext_resource type="PackedScene" uid="uid://o5qny8bfnyhc" path="res://models/scenario/tree.glb" id="6_dwbse"]
+[ext_resource type="PackedScene" uid="uid://bn50c3483gw1q" path="res://models/scenario/tree_2.glb" id="7_gbfbk"]
 [ext_resource type="PackedScene" uid="uid://2r8xweymxab4" path="res://models/actors/enemies/lesma.tscn" id="7_pkg7o"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_dwbse"]
@@ -61,7 +62,7 @@ script = ExtResource("1_f3sb7")
 view = NodePath("../Camera_pivot")
 
 [node name="jose" parent="Player" unique_id=1811416451 instance=ExtResource("3_aqk2v")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3872844, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0014822, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=1568743069]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5708027, 2.402777, 0)
@@ -88,9 +89,8 @@ navigation_mesh = SubResource("NavigationMesh_pkg7o")
 [node name="tree" parent="NavigationRegion3D" unique_id=595786208 instance=ExtResource("6_dwbse")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.555154, 9.963092, -10.174973)
 
-[node name="Lesma" parent="NavigationRegion3D" unique_id=816273055 node_paths=PackedStringArray("target") instance=ExtResource("7_pkg7o")]
+[node name="Lesma" parent="NavigationRegion3D" unique_id=816273055 instance=ExtResource("7_pkg7o")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 1)
-target = NodePath("../../Player")
 
 [node name="Floor3d" type="StaticBody3D" parent="NavigationRegion3D" unique_id=874269123]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0015141964, 0.0054564476, -0.0033388138)
@@ -103,5 +103,8 @@ skeleton = NodePath("../../..")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Floor3d" unique_id=1648371221]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.6830361, 0)
 shape = SubResource("BoxShape3D_f3sb7")
+
+[node name="tree_2" parent="." unique_id=1886061256 instance=ExtResource("7_gbfbk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.9171715, -0.42757964, -14.597064)
 
 [connection signal="body_entered" from="Player/hurt_box" to="Player" method="_on_hurt_box_body_entered"]

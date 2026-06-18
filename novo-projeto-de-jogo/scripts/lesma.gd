@@ -4,7 +4,7 @@ const SPEED = 1.0
 const CHASE_RANGE = 4.0
 const ATTACK_RANGE = 1.5
 const DAMAGE_FRAME_TIME = 0.83 
-const ATTACK_ANGLE_LIMIT = 0.7 # Define o cone de ataque (0.7 equivale a +/- 45 graus à frente)
+const ATTACK_ANGLE_LIMIT = 0.7
 
 @export var target: CharacterBody3D
 @onready var nav_agent: NavigationAgent3D = $nav_agent
