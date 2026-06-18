@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://o5qny8bfnyhc" path="res://models/scenario/tree.glb" id="6_dwbse"]
 [ext_resource type="PackedScene" uid="uid://bn50c3483gw1q" path="res://models/scenario/tree_2.glb" id="7_gbfbk"]
 [ext_resource type="PackedScene" uid="uid://2r8xweymxab4" path="res://models/actors/enemies/lesma.tscn" id="7_pkg7o"]
+[ext_resource type="PackedScene" uid="uid://boe713d24roal" path="res://models/scenario/jose_house.glb" id="8_gbfbk"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_dwbse"]
 
@@ -106,5 +107,8 @@ shape = SubResource("BoxShape3D_f3sb7")
 
 [node name="tree_2" parent="." unique_id=1886061256 instance=ExtResource("7_gbfbk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.9171715, -0.42757964, -14.597064)
+
+[node name="jose_house" parent="." unique_id=463656951 instance=ExtResource("8_gbfbk")]
+transform = Transform3D(-0.87954897, 0, 0.47580838, 0, 1, 0, -0.47580838, 0, -0.87954897, 9.2901325, -0.3459425, 6.2033105)
 
 [connection signal="body_entered" from="Player/hurt_box" to="Player" method="_on_hurt_box_body_entered"]
